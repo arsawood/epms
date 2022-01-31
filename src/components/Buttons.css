@@ -1,0 +1,34 @@
+/* .myclass{
+    width: 100%;
+    background-color: #727271;
+}
+.myclass > button {
+    border:none;
+    width: 200px;
+    height: 35px;
+   
+} */
+
+.myclass {
+    font-size: 17px;
+    width: 100%;
+    color: white;
+  }
+  
+  .myclass ul {
+    display: flex;
+    padding-left: 0px;
+  }
+  .myclass ul li {
+    padding: 0px 42px 0px 20px;
+    list-style: none;
+  }
+  
+  .myclass ul li:nth-child(odd){
+    background-color: #1f669b;
+  }
+  .myclass ul li:nth-child(even){
+    background-color: #2185d0;
+  }
+  
+  
