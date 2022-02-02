@@ -2,118 +2,38 @@ import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import Logo from "../logos/logo.png";
-import { GoThreeBars } from "react-icons/go";
 import Sidebar from "./Sidebar";
 
 function Header() {
   return (
-    <nav className="header">
+    // Header
+    <div className="header">
+      {/* Side bar */}
       <div>
         <Sidebar />
       </div>
+      {/* Header Logo */}
       <Link to="/">
         <img className="header__logo" src={Logo} alt="" />
       </Link>
-      <div className="header__nav">
-        <div style={{ margin: "5px" }}>
-          <span>Language</span>
-          <div>
-            <select style={{ border: "none", borderRadius: "5px" }}>
-              <option>English</option>
-              <option>Arabic</option>
-              <option>Chinese</option>
-              <option>Japanese</option>
-            </select>
+      {/* Main Header Items */}
+      <nav className="header__nav">
+        <div className="header__items">
+          <div className="header__itemsLeft">
+            <span>Language</span>
+            <div style={{ margin: "5px 0px" }}>
+              <select className="header__itemsDropdowm">
+                <option>English</option>
+                <option>Arabic</option>
+                <option>Chinese</option>
+                <option>Japanese</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <div style={{ margin: "5px" }}>
-          <span>Systems</span>
-          <div>
-            <select style={{ border: "none", borderRadius: "5px" }}>
-              <option>EPM</option>
-              <option>QMS</option>
-              <option>SMS</option>
-              <option>MMS</option>
-            </select>
-          </div>
-        </div>
-        <div style={{ margin: "5px"}}>
-          <span>Project: Cost Center</span>
-          <div>
-            <select style={{ border: "none", borderRadius: "5px" }}>
-              <option>Project Name: (100 = A)</option>
-              <option>Project Name: (100 = B)</option>
-              <option>Project Name: (100 = C)</option>
-              <option>Project Name: (100 = D)</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div style={{ margin: "5px" }}>
-        <span>Search Here</span>
-        <div>
-          <input
-            style={{
-              border: "none",
-              borderRadius: "5px",
-              // backgroundColor: "#cdebf7",
-            }}
-            type="text"
-          />
-        </div>
-      </div>
-      <div>
-        <span>Date</span>
-        <div>01-01-2022</div>
-      </div>
-      <div style={{ margin: "5px", marginLeft: '5px' }}>
-        <span>Time</span>
-        <div>12:25:00PM</div>
-      </div>
-      <div>
-        <Link to="/">
-          <img
-            className="header__client"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQycftH22LgLjuT0nNK7skvkTqeur4Oqxd6A&usqp=CAU"
-            alt=""
-          />
-        </Link>
-      </div>
-      <div>
-        <Link to="/">
-          <img
-            className="header__client2"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQycftH22LgLjuT0nNK7skvkTqeur4Oqxd6A&usqp=CAU"
-            alt=""
-          />
-        </Link>
-      </div>
-      <div>
-        <Link to="/">
-          <img
-            className="header__client3"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQycftH22LgLjuT0nNK7skvkTqeur4Oqxd6A&usqp=CAU"
-            alt=""
-          />
-        </Link>
-      </div>
-    </nav>
-  );
-}
-
-export default Header;
-
-{
-  /* <div>
-      <nav className="header">
-        <div>
-          <img className="header__logo" src={Logo} alt="saud" />
-        </div>
-        <div style={{ width: "100%" }}>
-          <div className="header-option">
-            <span className="heading">Systems</span>
-            <div className="dropdown">
-              <select style={{ width: "100%", backgroundColor: "#00A0E3" }}>
+          <div className="header__itemsLeft">
+            <span>Systems</span>
+            <div style={{ margin: "5px 0px" }}>
+              <select className="header__itemsDropdowm">
                 <option>EPM</option>
                 <option>QMS</option>
                 <option>SMS</option>
@@ -121,12 +41,10 @@ export default Header;
               </select>
             </div>
           </div>
-        </div>
-        <div style={{ width: "100%" }}>
-          <div className="header-option">
-            <span className="heading">Project: Cost Center</span>
-            <div className="dropdown">
-              <select style={{ width: "100%", backgroundColor: "#00A0E3" }}>
+          <div className="header__itemsLeft">
+            <span>Project: Cost Center</span>
+            <div style={{ margin: "5px 0px" }}>
+              <select className="header__itemsDropdowm">
                 <option>Project Name: (100 = A)</option>
                 <option>Project Name: (100 = B)</option>
                 <option>Project Name: (100 = C)</option>
@@ -134,17 +52,158 @@ export default Header;
               </select>
             </div>
           </div>
+          <div style={{ margin: "20px 10px" }}>
+            <span>Search Here</span>
+            <div style={{ margin: "5px 0px" }}>
+              <input className="header__searchInput" type="text" />
+            </div>
+          </div>
         </div>
-        <img
-          className="header-logolast"
-          src="https://www.setaswall.com/wp-content/uploads/2017/04/Pale-Chestnut-Solid-Color-Background-Wallpaper-5120x2880.png"
-          alt=""
-        />
+        <div>
+          <span>Date</span>
+          <div>01-01-2022</div>
+        </div>
+        <div style={{ margin: "5px 2px" }}>
+          <span>Time</span>
+          <div>12:25:00PM</div>
+        </div>
+        {/* <div>
+          <Link to="/">
+            <img
+              className="header__client"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQycftH22LgLjuT0nNK7skvkTqeur4Oqxd6A&usqp=CAU"
+              alt=""
+            />
+          </Link>
+        </div> */}
+        <div>
+          <Link to="/">
+            <img
+              className="header__client2"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQycftH22LgLjuT0nNK7skvkTqeur4Oqxd6A&usqp=CAU"
+              alt=""
+            />
+          </Link>
+        </div>
+        {/* <div>
+          <Link to="/">
+            <img
+              className="header__client3"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQycftH22LgLjuT0nNK7skvkTqeur4Oqxd6A&usqp=CAU"
+              alt=""
+            />
+          </Link>
+        </div> */}
       </nav>
-      {/* <div className="grid-container">
-        <div>Company</div>
-        <div>User : </div>
-        <div>Export</div>
-        <div>Print</div>
-      </div> */
+    </div>
+  );
 }
+
+export default Header;
+
+// import React from "react";
+// import "./Header.css";
+// import { Link } from "react-router-dom";
+// import Logo from "../logos/logo.png";
+// import { GoThreeBars } from "react-icons/go";
+// import Sidebar from "./Sidebar";
+// import { Sticky } from "semantic-ui-react";
+
+// function Header() {
+//   return (
+//     <div style={{ display: "flex", position: "sticky", top: 0 }}>
+//       <div>
+//         <Sidebar />
+//       </div>
+//       <Link to="/">
+//         <img className="header__logo" src={Logo} alt="" />
+//       </Link>
+//       <nav className="header">
+//         <div className="header__nav">
+//           <div style={{ margin: "5px" }}>
+//             <span>Language</span>
+//             <div>
+//               <select style={{ border: "none", borderRadius: "5px" }}>
+//                 <option>English</option>
+//                 <option>Arabic</option>
+//                 <option>Chinese</option>
+//                 <option>Japanese</option>
+//               </select>
+//             </div>
+//           </div>
+//           <div style={{ margin: "5px" }}>
+//             <span>Systems</span>
+//             <div>
+//               <select style={{ border: "none", borderRadius: "5px" }}>
+//                 <option>EPM</option>
+//                 <option>QMS</option>
+//                 <option>SMS</option>
+//                 <option>MMS</option>
+//               </select>
+//             </div>
+//           </div>
+//           <div style={{ margin: "5px" }}>
+//             <span>Project: Cost Center</span>
+//             <div>
+//               <select style={{ border: "none", borderRadius: "5px" }}>
+//                 <option>Project Name: (100 = A)</option>
+//                 <option>Project Name: (100 = B)</option>
+//                 <option>Project Name: (100 = C)</option>
+//                 <option>Project Name: (100 = D)</option>
+//               </select>
+//             </div>
+//           </div>
+//         </div>
+//         <div style={{ margin: "5px" }}>
+//           <span>Search Here</span>
+//           <div>
+//             <input
+//               style={{
+//                 border: "none",
+//                 borderRadius: "5px",
+//               }}
+//               type="text"
+//             />
+//           </div>
+//         </div>
+//         <div>
+//           <span>Date</span>
+//           <div>01-01-2022</div>
+//         </div>
+//         <div style={{ margin: "5px", marginLeft: "5px" }}>
+//           <span>Time</span>
+//           <div>12:25:00PM</div>
+//         </div>
+//         <div>
+//         <Link to="/">
+//           <img
+//             className="header__client"
+//             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQycftH22LgLjuT0nNK7skvkTqeur4Oqxd6A&usqp=CAU"
+//             alt=""
+//           />
+//         </Link>
+//       </div>
+//       <div>
+//         <Link to="/">
+//           <img
+//             className="header__client2"
+//             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQycftH22LgLjuT0nNK7skvkTqeur4Oqxd6A&usqp=CAU"
+//             alt=""
+//           />
+//         </Link>
+//       </div>
+//       <div>
+//         <Link to="/">
+//           <img
+//             className="header__client3"
+//             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQycftH22LgLjuT0nNK7skvkTqeur4Oqxd6A&usqp=CAU"
+//             alt=""
+//           />
+//         </Link>
+//       </div>
+//       </nav>
+//     </div>
+//   );
+// }
+
+// export default Header;

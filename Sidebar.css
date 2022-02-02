@@ -5,12 +5,13 @@
     justify-content: start;
     align-items: center;
     position: sticky;
+   
   }
   
   .menu-bars {
     margin-left: 1rem;
     font-size: 2rem;
-    background: none;
+    color: aqua;
   }
   
   .nav-menu {

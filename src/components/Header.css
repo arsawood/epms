@@ -1,63 +1,53 @@
+.header__logo {
+  width: 194px;
+  height: 80px;
+  object-fit: contain; /*keep image fixed size when screen resize */
+  margin-right: 20px;
+  margin-left: 20px;
+}
 .header {
-    background-color: #ffe02f;
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    /* z-index: 100; */
-    width: 100%;
-  }
-  
-  .header__logo {
-    width: 150px;
-    height: 80px;
-    object-fit: contain; /*keep image fixed size when screen resize */
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  .header__client{
-    width: 80px;
-    height: 80px;
-    margin-left: 235px;
-  }
-  .header__client2{
-    width: 80px;
-    height: 80px;
-    margin-left: -165px;
-  }
-  .header__client3{
-    width: 80px;
-    height: 80px;
-    margin-left: -250px;
-  }
-  
-  /* .header__search {
-    display: flex;
-    flex: 1;
-  }
-  .header__searchInput {
-    height: 12px;
-    padding: 10px;
-    border: none;
-    width: 200px;
-    background-color: gray;
-  } */
-  
-  .header__nav {
-    display: flex;
-    margin-left: 50px;
-  }
-  
-  
-  
-  /* @media (min-width:800px) and (max-width:1200px){
-    .header{
-      background-color: #540ba8;
-      display: flex;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      width: 100%;
-    }
-  } */
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+.header__nav {
+  background-color: #00a0e3;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 80px;
+}
+.header__items {
+  display: flex;
+}
+.header__itemsLeft {
+  margin: 20px 10px;
+  font-size: 15px;
+}
+.header__itemsDropdowm {
+  border: none;
+  border-radius: 5px;
+}
+.header__searchInput {
+  border: none;
+  border-radius: 5px;
+}
+.header__client {
+  width: 80px;
+  height: 80px;
+  margin-left: 235px;
+}
+.header__client2 {
+  width: 80px;
+  height: 80px;
+  margin-left: 192px;
+}
+.header__client3 {
+  width: 80px;
+  height: 80px;
+  margin-left: 20px;
+}

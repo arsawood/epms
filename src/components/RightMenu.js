@@ -10,7 +10,7 @@ const RightMenu = () => {
             <li>Epms</li>
             <li>Roles</li>
             <li>Workflow</li>
-            <li>Menu Builder</li>
+            {/* <li>Menu Builder</li> */}
             <li>Form Builder</li>
             <li>Recycle bin</li>
             <li>Widgets Builder</li>

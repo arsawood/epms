@@ -1,34 +1,38 @@
-/* .myclass{
-    width: 100%;
-    background-color: #727271;
-}
-.myclass > button {
-    border:none;
-    width: 200px;
-    height: 35px;
-   
-} */
-
 .myclass {
-    font-size: 17px;
-    width: 100%;
-    color: white;
-  }
-  
-  .myclass ul {
-    display: flex;
-    padding-left: 0px;
-  }
-  .myclass ul li {
-    padding: 0px 42px 0px 20px;
-    list-style: none;
-  }
-  
-  .myclass ul li:nth-child(odd){
-    background-color: #1f669b;
-  }
-  .myclass ul li:nth-child(even){
-    background-color: #2185d0;
-  }
-  
-  
+  font-size: 17px;
+  width: 100%;
+  color: white;
+  position: sticky;
+  top: 80px;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  z-index: -1;
+}
+
+.myclass ul {
+  display: flex;
+  margin-left: -28px;
+
+}
+.myclass ul li {
+  /* border: 2px solid blue; */
+  padding: 5px 66px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+}
+.myclass ul li a {
+  text-decoration: none;
+  justify-content: center;
+  color: white;
+}
+
+.myclass ul li:nth-child(odd) {
+  background-color: #1f669b;
+}
+.myclass ul li:nth-child(even) {
+  background-color: #0f499163;
+}
