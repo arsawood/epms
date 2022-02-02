@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import { SidebarData } from './SidebarData';
-import SubMenu from './SubMenu';
-import { IconContext } from 'react-icons/lib';
+import React, { useState } from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
+import { SidebarData } from "./SidebarData";
+import SubMenu from "./SubMenu";
+import { IconContext } from "react-icons/lib";
 
 const Nav = styled.div`
   // background: #15171c;
@@ -26,13 +26,13 @@ const NavIcon = styled(Link)`
 
 const SidebarNav = styled.nav`
   background: #15171c;
-  width: 250px;
+  width: 200px;
   height: 100vh;
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
-  left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
+  left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 350ms;
   z-index: 10;
 `;
@@ -48,15 +48,18 @@ const Sidebar = () => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff' }}>
+      <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
-          <NavIcon to='#'>
-            <FaIcons.FaBars style={{color: 'black'}} onClick={showSidebar} />
+          <NavIcon to="#">
+            <AiIcons.AiOutlineBars
+              style={{ color: "black" }}
+              onClick={showSidebar}
+            />
           </NavIcon>
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
-            <NavIcon to='#'>
+            <NavIcon to="#">
               <AiIcons.AiOutlineClose onClick={showSidebar} />
             </NavIcon>
             {SidebarData.map((item, index) => {
