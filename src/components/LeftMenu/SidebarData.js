@@ -22,24 +22,24 @@ export const SidebarData = [
     subNav: [
       {
         title: "Module 1",
-        path: "/overview/users",
+        path: "/overview/module1",
         icon: <IoIcons.IoIosPaper />,
       },
       {
         title: "Module 2",
-        path: "/overview/revenue",
+        path: "/overview/module2",
         icon: <IoIcons.IoIosPaper />,
       },
       {
         title: "Module 3",
-        path: "/overview/revenue",
+        path: "/overview/module3",
         icon: <IoIcons.IoIosPaper />,
       },
     ],
   },
   {
     title: "Menu Builder",
-    path: "/dashboard",
+    path: "/menubuilder",
     icon: <MdIcons.MdOutlineBuild />,
   },
   {

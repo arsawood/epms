@@ -1,10 +1,12 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
-import Logo from "../logos/logo.png";
-import Sidebar from "./Sidebar";
+import Logo from "../../logos/logo.png";
+import Sidebar from "../LeftMenu/Sidebar";
 
 function Header() {
+  let time = new Date().toLocaleTimeString()
+  let date = new Date().toLocaleDateString()
   return (
     // Header
     <div className="header">
@@ -59,13 +61,19 @@ function Header() {
             </div>
           </div>
         </div>
-        <div>
-          <span>Date</span>
-          <div>01-01-2022</div>
-        </div>
-        <div style={{ margin: "5px 2px" }}>
-          <span>Time</span>
-          <div>12:25:00PM</div>
+        <div
+          style={{
+            // border: "2px solid red",
+            padding: "25px 9px",
+            fontWeight: "bold",
+            fontSize: '18px',
+            color: "white",
+          }}
+        >
+          {date}
+          <div>
+          {time}
+          </div>
         </div>
         {/* <div>
           <Link to="/">

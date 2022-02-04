@@ -2,8 +2,8 @@
   font-size: 17px;
   width: 100%;
   color: white;
-  position: sticky;
-  top: 80px;
+  /* position: sticky;
+  top: 100px; */
   /* display: flex; */
   /* justify-content: center;
   align-items: center; */
@@ -17,7 +17,7 @@
 }
 .myclass ul li {
   /* border: 2px solid blue; */
-  padding: 5px 66px;
+  padding: 5px 68px;
   list-style: none;
   display: flex;
   justify-content: center;

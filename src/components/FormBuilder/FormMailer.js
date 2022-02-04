@@ -19,7 +19,7 @@ const FormMailer = () => {
       )
       .then((res) => {
         console.log(res);
-        alert("Your Email has Sent")
+        alert("Your Email has Sent");
       })
       .catch((err) => console.log(err));
 
@@ -31,7 +31,7 @@ const FormMailer = () => {
   return (
     <div style={{ marginLeft: "500px", marginTop: "20px" }}>
       <h4>Enter your details to send Email</h4>
-      <hr/>
+      <hr style={{ width: "400px", boder: "5px solid red" }} />
       <form className="ui form" onSubmit={sendEmail}>
         <div className="field">
           <label>Full Name</label>
@@ -57,6 +57,7 @@ const FormMailer = () => {
         <div className="field">
           <label>Project</label>
           <input
+            style={{ width: "400px", boder: "5px solid red" }}
             type="text"
             name="project"
             // value={project}
@@ -67,6 +68,7 @@ const FormMailer = () => {
         <div className="field">
           <label>Message</label>
           <textarea
+            style={{ width: "400px", boder: "5px solid red" }}
             name="message"
             rows="2"
             // value={yourMessage}

@@ -27,6 +27,7 @@
 .header__itemsLeft {
   margin: 20px 10px;
   font-size: 15px;
+  flex: 1;
 }
 .header__itemsDropdowm {
   border: none;
@@ -44,7 +45,7 @@
 .header__client2 {
   width: 80px;
   height: 80px;
-  margin-left: 192px;
+  margin-left: 218px;
 }
 .header__client3 {
   width: 80px;
