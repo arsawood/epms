@@ -9,7 +9,7 @@ import * as MdIcons from "react-icons/md";
 export const SidebarData = [
   {
     title: "Dashboard",
-    path: "/dashboard",
+    path: "/welcome/dashboard",
     icon: <MdIcons.MdDashboard />,
   },
   {

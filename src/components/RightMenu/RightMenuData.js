@@ -4,12 +4,7 @@ import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
 
 export const RightMenuData = [
-  {
-    title: "Admin",
-    path: "/",
-    // icon: <AiIcons.AiFillHome />,
-    cName: "nav-text",
-  },
+ 
   {
     title: "Roles",
     path: "/reports",
@@ -24,7 +19,7 @@ export const RightMenuData = [
   },
   {
     title: "Form Builder",
-    path: "/formbuilder",
+    path: "/welcome/formbuilder",
     // icon: <IoIcons.IoMdPeople />,
     cName: "nav-text",
   },

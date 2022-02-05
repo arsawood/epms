@@ -15,7 +15,7 @@ function Header() {
         <Sidebar />
       </div>
       {/* Header Logo */}
-      <Link to="/">
+      <Link to="/welcome">
         <img className="header__logo" src={Logo} alt="" />
       </Link>
       {/* Main Header Items */}
