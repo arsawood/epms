@@ -2,12 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../logos/logo.png";
 import "./LandingPage.css";
+import Body from "./Body";
 import Footer from "./Footer";
 
 const LandingPage = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav
+        style={{ position: "sticky", top: "0" }}
+        className="navbar navbar-expand-lg navbar-light bg-light"
+      >
         <div className="container-fluid">
           <Link className="navbar-brand" to="#">
             <img style={{ width: "180px" }} src={Logo} alt="" />
@@ -61,8 +65,12 @@ const LandingPage = () => {
           </div>
         </div>
       </nav>
+      {/* body */}
       <div>
-        {/* footer */}
+        <Body />
+      </div>
+      {/* footer */}
+      <div>
         <Footer />
       </div>
     </>

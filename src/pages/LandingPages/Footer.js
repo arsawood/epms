@@ -9,35 +9,33 @@ const Footer = () => {
   return (
     <div className="footer">
       <nav>
-          <div>
-          © ® 2022 COPYRIGHT EPMS. ALL RIGHTS RESERVED.
-          </div>
+        <div>© ® 2022 COPYRIGHT EPMS. ALL RIGHTS RESERVED.</div>
         <h5>Social Platforms</h5>
         <ul>
           <li>
-            <Link to="/">
+            <a href="https://www.google.com/">
               <BsGoogle />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/">
+            <a href="https://www.facebook.com">
               <FaFacebookF />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/">
+            <a href="https://www.youtube.com">
               <IoLogoYoutube />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/">
-              <BsInstagram />
-            </Link>
-          </li>
-          <li>
-            <Link to="/">
+            <a href="https://www.twitter.com">
               <BsTwitter />
-            </Link>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com">
+              <BsInstagram />
+            </a>
           </li>
         </ul>
       </nav>
