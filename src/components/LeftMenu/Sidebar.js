@@ -13,8 +13,8 @@ const Nav = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  scro
-`;
+  `;
+  // scroll-y: auto;
 
 const NavIcon = styled(Link)`
   margin-left: 2rem;
@@ -39,9 +39,7 @@ const SidebarNav = styled.nav`
   overflow-y: scroll
 `;
 
-const SidebarWrap = styled.div`
-  width: 100%;
-`;
+const SidebarWrap = styled.div`width: 100%;`;
 
 const Sidebar = () => {
   const [sidebar, setSidebar] = useState(false);

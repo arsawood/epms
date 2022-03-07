@@ -6,42 +6,60 @@ import Dashboard from "./components/Dash/Dashboard";
 import LandingPage from "./pages/LandingPages/LandingPage";
 
 import { Routes, Route } from "react-router-dom";
+import Epms from "./pages/Epms";
+import { Reports, ReportsOne, ReportsTwo, ReportsThree } from "./pages/Reports";
+import Messages from "./pages/Messages";
 
 const App = () => {
   return (
     <>
-      <div></div>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route
-          path="/welcome"
-          element={
+        <Route path="/welcome" element={
+            <>
+              <Header />
+              <Buttons /> </>} />
+        <Route path="/welcome/dashboard" element={
             <>
               <Header />
               <Buttons />
-            </>
-          }
-        />
-        <Route
-          path="/welcome/dashboard"
-          element={
+              <Dashboard /> </> } />
+        <Route path="/welcome/formbuilder" element={
             <>
               <Header />
               <Buttons />
-              <Dashboard />
-            </>
-          }
-        />
-        <Route
-          path="/welcome/formbuilder"
-          element={
+              <FormMailer /> </> } />
+        <Route path="/epms" element={
             <>
               <Header />
               <Buttons />
-              <FormMailer />
-            </>
-          }
-        />
+              <Epms /> </> } />
+        <Route path="/reports" element={
+            <>
+              <Header />
+              <Buttons />
+              <Reports /> </> } />
+        <Route path="/reports/reports1" element={
+              <>
+              <Header />
+              <Buttons />
+              <ReportsOne /> </> } />
+        <Route path="/reports/reports2" element={
+              <>
+              <Header />
+              <Buttons />
+              <ReportsOne /> </> } />
+        <Route path="/reports/reports3" element={
+              <>
+              <Header />
+              <Buttons />
+              <ReportsOne /> </> } />
+        <Route path="/messages" element={
+              <>
+              <Header />
+              <Buttons />
+              <Messages /> </> } />
+        
       </Routes>
     </>
   );

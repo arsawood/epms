@@ -22,17 +22,17 @@ export const SidebarData = [
     subNav: [
       {
         title: "Module 1",
-        path: "/overview/module1",
+        path: "/epms/module1",
         icon: <IoIcons.IoIosPaper />,
       },
       {
         title: "Module 2",
-        path: "/overview/module2",
+        path: "/epms/module2",
         icon: <IoIcons.IoIosPaper />,
       },
       {
         title: "Module 3",
-        path: "/overview/module3",
+        path: "/epms/module3",
         icon: <IoIcons.IoIosPaper />,
       },
     ],
@@ -61,6 +61,11 @@ export const SidebarData = [
         path: "/reports/reports2",
         icon: <IoIcons.IoIosPaper />,
         cName: "sub-nav",
+      },
+      {
+        title: "Reports 3",
+        path: "/reports/reports3",
+        icon: <IoIcons.IoIosPaper />,
       },
       {
         title: "Reports 3",
